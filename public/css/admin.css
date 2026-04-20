@@ -1,0 +1,195 @@
+/* ========================
+   Admin Layout & Pages
+========================= */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #050b1e;
+    color: #ffffff;
+}
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    max-width: 250px;
+    background: rgba(13, 25, 61, 0.95);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.sidebar-brand img {
+    width: 40px;
+}
+
+.sidebar-brand h2 {
+    font-size: 20px;
+    color: #4de3ff;
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #cfd8ff;
+    text-decoration: none;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sidebar-nav a:hover {
+    background: #4de3ff;
+    color: #000;
+}
+
+/* Main content */
+.admin-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-header {
+    background: rgba(13, 25, 61, 0.95);
+    padding: 20px;
+    border-bottom: 1px solid #4de3ff;
+}
+
+.admin-header h1 {
+    margin: 0;
+    color: #4de3ff;
+}
+
+.admin-content {
+    padding: 20px;
+    flex: 1;
+}
+
+/* Cards for stats (optional) */
+.stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stats .card {
+    flex: 1;
+    min-width: 150px;
+    background: rgba(77, 163, 255, 0.1);
+    padding: 100px;
+    border-radius: 25px;
+    text-align: center;
+    color: #4de3ff;
+    font-weight: 900;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 20px;
+    border-radius: 16px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card i {
+    font-size: 40px;
+    color: #4de3ff;
+}
+
+i {
+    font-size: 30px;
+    color: #4de3ff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(77, 163, 255, 0.4);
+    color: #4de3ff;
+}
+
+table {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border: 10px solid rgba(77, 163, 255, 0.4);
+    border-radius: 20px;
+    border-spacing: 0;   
+}
+
+th, td {
+    border: 5px solid rgba(77, 163, 255, 0.4);
+    text-align: center;
+    padding: 10px;
+}
+
+th + th,
+td + td,
+th + td,
+td + th {
+    border-left: none;
+}
+
+tr + tr th,
+tr + tr td {
+    border-top: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+textarea{
+        resize: none;
+        height: 380px;
+}
+
+.action-buttons a,
+.action-buttons button {
+    display: inline-block;
+    margin-right: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4dabff;
+    font-size: 18px;
+}
+
+.action-buttons button:hover,
+.action-buttons a:hover {
+    color: #0066ff;
+}
+
